@@ -75,7 +75,6 @@ h2 {
 }
 
 .project-images {
-    display: flex;
     gap: 10px;
     margin-top: 10px;
 }
@@ -129,4 +128,34 @@ h2 {
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 20px;
+}
+
+@media (max-width: 480px) {
+    body {
+        max-width: 95%; 
+    }
+    .row {
+        flex-direction: column; 
+    }
+
+    .navbar a {
+        margin: 0 5px; 
+        font-size: 0.8rem;
+    }
+
+    .project-images img {
+        width: 100%; 
+    }
+
+    .carousel-btn {
+        height: 2.5rem; 
+        width: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 85%; 
+        padding: 10px;
+    }
 }
